@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Atelier API DOM</title>
+  <title>NorImmo</title>
   <meta name="description" content="Projet API DOM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -52,12 +52,12 @@
               Prestations</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="devis.html">Devis</a></li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="Photos.html">Photos</a></li>
-            </ul>
+              <hr class="dropdown-divider">
           </li>
-          
+          <li><a class="dropdown-item" href="Photos.html">Photos</a></li>
+        </ul>
+        </li>
+
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -70,58 +70,37 @@
 
 
   <main class="container my-5">
-    
-    <!--<section class="my-5">
-      <h2>L'actualité AFPA</h2>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-4">
-          <article class="card">
-            <img src="https://picsum.photos/400" class="card-img-top img-fluid" alt="">
-            <section class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-dark me-1">Go somewhere</a>
-              </div>
-            </section>
-          </article>
-        </div>-->
-        
-
-    <!--<section class="my-5">
-      <h2>Formation en vedette :</h2>
-        <article class="row">
-          <aside class="col-12 col-sm-6 col-lg-4 bg-light">
-            <img src="https://picsum.photos/400" alt="" class="img-fluid">
-          </aside>
-          <section class="col-12 col-sm-6 col-lg-8 bg-light">
-            <h3 class="text-danger text-center">Formation soudeur en milieu marin</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptate mollitia quia reiciendis
-              sint iure, debitis dolor, culpa quae nesciunt vitae, eaque enim totam perferendis cumque neque eius.
-              Voluptas, cum?</p>
-          </section>
-        </article>
-    </section>-->
-
-    <!--<section class="my-5">
-      <h2>Les évènements à venir :</h2>
-      <ul class="list-group w-75 mx-auto my-4">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-      </ul>
-    </section>-->
+    <section class="border border-danger col-12">
+      <form action="devis.html" class="mx-5 my-3">
+        <div class="row mb-3">
+          <label class="col-3" for="superficie">Superficie choisi :</label>
+          <input class="col-9" type="number" name="superficie" id="superficie">
+        </div>
+        <div class="row mb-3">
+          <label class="col-4" for="roomsnumber">Choisir un nombre de chambre :</label>
+          <input class="col-8" type="number" name="roomsnumber" id="roomsnumber">
+        </div>
+        <div class="row mb-3">
+          <label class="col-4" for="material">Choisir votre materiaux de construction :</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Choisissez votre materiaux de construction</option>
+            <option value="1">Bois</option>
+            <option value="2">Parpaings</option>
+            <option value="3">Briques</option>
+        </div>
+        </select>
+      </form>
+    </section>
 
   </main>
 
   <footer class="bg-dark text-white py-5">
     <section class="container">
-        <h1 class="display-1" id="mainTitle">Nor <span class="text-danger">Immo</span></h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur officiis nostrum cum alias atque ullam fuga consequuntur, a quae eos, distinctio laborum rerum soluta eaque sit recusandae sapiente!</p>
-      </section>
+      <h1 class="display-1" id="mainTitle">Nor <span class="text-danger">Immo</span></h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur officiis nostrum cum
+        alias atque ullam fuga consequuntur, a quae eos, distinctio laborum rerum soluta eaque sit recusandae sapiente!
+      </p>
+    </section>
 
   </footer>
 
