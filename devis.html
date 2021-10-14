@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NorImmo</title>
+  <title>NorImmo - Devis</title>
   <meta name="description" content="Projet API DOM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -68,33 +68,42 @@
   </nav>
 
 
+  <main class="container-fluid my-lg-5 ">
+    <section class="container backgroundImg">
+      <div class="border border-danger col-12">
 
-  <main class="container my-5">
-    <section class="border border-danger col-12">
-      <form action="devis.html" class="mx-5 my-3">
-        <div class="row mb-3">
-          <label class="col-3" for="superficie">Superficie choisi :</label>
-          <input class="col-9" type="number" name="superficie" id="superficie">
-        </div>
-        <div class="row mb-3">
-          <label class="col-4" for="roomsnumber">Choisir un nombre de chambre :</label>
-          <input class="col-8" type="number" name="roomsnumber" id="roomsnumber">
-        </div>
-        <div class="row mb-3">
-          <label class="col-4" for="material">Choisir votre materiaux de construction :</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Choisissez votre materiaux de construction</option>
-            <option value="1">Bois</option>
-            <option value="2">Parpaings</option>
-            <option value="3">Briques</option>
-        </div>
-        </select>
-      </form>
+        <form action="devis.html" class="mx-lg-5 my-lg-3">
+
+          <div class="row mb-lg-5 space-between-sm">
+            <label class="col-sm-12 mx-sm-2 col-lg-4" for="superficie">Choisir votre superficie :</label>
+            <input class="col-sm-12 mx-sm-2 col-lg-4" type="number" name="superficie" id="superficie">
+          </div>
+
+          <div class="row mb-lg-5">
+            <label class="col-sm-12 mx-sm-2 col-lg-4" for="roomsnumber">Choisir un nombre de chambre :</label>
+            <input class="col-sm-12 mx-sm-2 col-lg-4" type="number" name="roomsnumber" id="roomsnumber">
+          </div>
+
+          <div class="row mb-lg-5">
+            <label class="col-sm-12 mx-sm-2 col-lg-4" for="material">Choisir votre materiaux de construction :</label>
+            <div class="col-sm-12 mx-sm-2 col-lg-4">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Choisissez votre materiaux de construction</option>
+                <option value="1">Bois</option>
+                <option value="2">Parpaings</option>
+                <option value="3">Briques</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="offset-3 col-6" type="submit">Calculer votre devis</button>
+        </form>
+
+      </div>
     </section>
-
   </main>
 
-  <footer class="bg-dark text-white py-5">
+  <footer class="bg-dark text-white py-lg-5 py-sm-2">
     <section class="container">
       <h1 class="display-1" id="mainTitle">Nor <span class="text-danger">Immo</span></h1>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur officiis nostrum cum

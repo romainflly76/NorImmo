@@ -88,7 +88,12 @@ textarea {
    ========================================================================== */
 
    
-
+.backgroundImg {
+  background-image: url(../img/house-architectural-plan.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
 
 
 
