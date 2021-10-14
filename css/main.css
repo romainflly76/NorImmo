@@ -87,14 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   
-.backgroundImg {
-  background-image: url(../img/house-architectural-plan.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 80vh;
-  opacity: 0.8;
-}
+  
     /* ********************************* carousel *****************************/
 
     h2 {
