@@ -87,14 +87,18 @@
      Author's custom styles
      ========================================================================== */
   
-     *, ::before, ::after {    /* enleve toutes les regles CSS margin et padding pour les metre à 0*/
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box; /* prendre en compte le remplissage des padding dans le calcul des largeurs et des hauteurs*/
-      }
-      body {
-        background-color: white;
-      }
+     header {
+      background-color: #457b9d;
+    }
+    
+    footer {
+      background-color: #457b9d;
+      
+    }
+    .far {
+      font-size: 60%;
+    }
+
   
       .container {
           max-width: 800px;

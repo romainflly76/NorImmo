@@ -86,17 +86,27 @@ textarea {
 /* ==========================================================================
      Author's custom styles
      ========================================================================== */
+  
+     header {
+      background-color: #457b9d;
+    }
+    footer {
+      background-color: #457b9d;
+    }
 
-.backgroundImg {
-    background-image: url(../img/house-architectural-plan.png);
-    min-height: 70vh;
-    opacity: 0.8;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-/* ==========================================================================
+    .far {
+      font-size: 60%;
+    }
+  .backgroundImg {
+      background-image: url(../img/house-architectural-plan.png);
+      height: 80vh;
+      opacity: 0.8;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  
+  /* ==========================================================================
      Helper classes
      ========================================================================== */
 
