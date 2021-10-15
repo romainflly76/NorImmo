@@ -94,7 +94,7 @@ textarea {
   
   footer {
     background-color: #457b9d;
-    margin-top: 100vh;
+    /* margin-top: 100vh; */
   }
   .far {
     font-size: 60%;
