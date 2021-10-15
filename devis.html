@@ -70,29 +70,27 @@
   </nav>
 
 
-  <main class="container-fluid my-lg-5 my-sm-2">
-    <section class="container backgroundImg">
-      <div class="border border-danger col-12">
+  <main class="container-fluid my-2 my-sm-2 my-lg-5">
+    <section class="container">
+      <div class=" col-12 backgroundImg border border-danger">
 
-        <form action="devis.html" class="mx-lg-5 my-lg-3">
-          <div class="row mt-2 mb-lg-5">
-            <label class="col-8 offset-2 mb-3 col-sm-12 mx-sm-2 col-lg-4" for="superficie">Choisir votre superficie
-              :</label>
-            <input class="col-8 offset-2 mb-3 col-sm-8  mx-sm-2 col-lg-4" type="number" name="superficie"
-              id="superficie">
+        <form action="devis.html"  class="row text-center mx-lg-5 my-lg-3">
+          
+          <div class="row mt-2 mb-lg-5 justify-content-lg-center">
+            <label class="col-12 my-2 col-sm-12 mx-sm-2 col-lg-4 " for="surface">Choisir votre superficie :</label>
+            <input class="col-8 offset-2 my-2 col-sm-8 offset-sm-2 my-sm-2 col-lg-4 " type="number" name="surface"
+              id="surface" required>
           </div>
 
-          <div class="row mb-lg-5">
-            <label class="col-8 offset-2 mb-3 col-sm-12 mx-sm-2 col-lg-4" for="roomsnumber">Choisir un nombre de chambre
-              :</label>
-            <input class="col-8 offset-2 mb-3 col-sm-12 mx-sm-2 col-lg-4" type="number" name="roomsnumber"
-              id="roomsnumber">
+          <div class="row mb-lg-5 justify-content-lg-center">
+            <label class="col-12 my-2 col-sm-12 my-sm-3 col-lg-4" for="roomsnumber">Choisir un nombre de chambre :</label>
+            <input class="col-8 offset-2 my-2 col-sm-8 my-sm-3 col-lg-4" type="number" name="roomsnumber"
+              id="roomsnumber" required>
           </div>
 
-          <div class="row mb-lg-5">
-            <label class="col-8 offset-2 mb-3 col-sm-12 mx-sm-2 col-lg-4" for="material">Choisir votre materiaux de
-              construction :</label>
-            <div class="col-8 offset-2 mb-5 col-sm-12 mx-sm-2 col-lg-4">
+          <div class="row mb-lg-5 justify-content-lg-center">
+            <label class="col-8 offset-2 mb-3 col-sm-12 mx-sm-2 col-lg-4" for="material">Choisir votre materiaux de construction :</label>
+            <div class="col-8 offset-2 mb-5 col-sm-8 my-sm-3 col-lg-4">
               <select class="form-select" aria-label="Default select example">
                 <option selected>Choisissez votre materiaux de construction</option>
                 <option value="1">Bois</option>
@@ -101,34 +99,34 @@
               </select>
             </div>
           </div>
-          <button class="offset-3 col-6" type="submit">Calculer votre devis</button>
+          <button class="offset-3 col-6 my-3" type="submit">Calculer votre devis</button>
         </form>
 
-        <aside class="mt-4">
-          <h3>Calcule de l'estimation de votre Projet :</h3>
+        <aside class="mt-4 text-center">
+          <h3 class="bg-light">Calcule de l'estimation de votre Projet :</h3>
           <div>
-            <p>ici ce trouve le prix de l'estimation</p>
+            <p class="bg-light offset-3 col-6 my-3">ici ce trouve le prix de l'estimation</p>
           </div>
         </aside>
+
       </div>
     </section>
   </main>
 
-  <footer class="bg-dark text-white py-lg-5 py-sm-2">
+  <footer class="bg-dark text-white py-2 py-sm-2 py-lg-5">
     <section class="container">
       <h1 class="display-1" id="mainTitle">Nor <span class="text-danger">Immo</span></h1>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur officiis nostrum cum
         alias atque ullam fuga consequuntur, a quae eos, distinctio laborum rerum soluta eaque sit recusandae sapiente!
       </p>
     </section>
-
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/devis.js"></script>
 
 </body>
 
