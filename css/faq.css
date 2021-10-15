@@ -99,13 +99,20 @@ textarea {
 .flexdircolrev {
   flex-direction: column-reverse;
 }
-   .title {
+.title {
      background-color: #EEE6D8
    }
-    h2 {
+h2 {
       font-family: 'Roboto', sans-serif;
     }
-
+button {
+  border: none;
+}
+.dropdown-content {
+  border: solid;
+  margin: 0.8em;
+  padding: 1em;
+}
 
 
 
