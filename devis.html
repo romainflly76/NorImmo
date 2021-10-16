@@ -74,25 +74,25 @@
 
   <main class="container-fluid my-2 my-sm-2 my-lg-5">
     <section class="container-fluid">
-      <div class=" col-12 backgroundImg border rounded-3 border-danger">
+      <div class=" col-12 col-lg-10 offset-lg-1 backgroundImg border border-2 rounded-3 border-danger">
 
         <form action="devis.html" class="row text-center justify-content-center mx-lg-5 my-lg-3">
 
           <div class="row mt-2 my-lg-5 justify-content-center">
-            <label class="col-8 my-2 col-sm-8 me-sm-3 col-lg-4 bg-457b9d" for="surface">Choisir votre superficie :</label>
-            <input class="col-8 my-2 col-sm-8 my-sm-3 col-lg-4 " type="number" name="surface"
-              id="surface" required>
+            <label class="col-8 my-1 col-sm-8 me-sm-3 col-lg-4" for="surface">Choisir votre superficie :</label>
+            <input class="col-8 my-1 col-sm-8 my-sm-3 col-lg-4 " type="number" name="surface" id="surface" required>
           </div>
 
           <div class="row my-lg-5 justify-content-center">
-            <label class="col-8 my-2 col-sm-8 me-sm-3 col-lg-4 bg-457b9d" for="roomsnumber">Choisir un nombre de chambre :</label>
-            <input class="col-8 my-2 col-sm-8 my-sm-3 col-lg-4" type="number" name="roomsnumber"
-              id="roomsnumber" required>
+            <label class="col-8 my-1 col-sm-8 me-sm-3 col-lg-4" for="roomsnumber">Choisir un nombre de chambre :</label>
+            <input class="col-8 my-1 col-sm-8 my-sm-3 col-lg-4" type="number" name="roomsnumber" id="roomsnumber"
+              required>
           </div>
 
           <div class="row my-lg-5 justify-content-center">
-            <label class="col-8 mb-3 col-sm-8 me-sm-3 col-lg-4 bg-457b9d" for="material">Choisir votre materiaux de construction :</label>
-            <div class="col-8 mb-5 col-sm-8 my-sm-3 col-lg-4">
+            <label class="col-8 mb-1 col-sm-8 me-sm-3 col-lg-4" for="material">Choisir votre materiaux de construction
+              :</label>
+            <div class="col-8 mb-3 col-sm-8 my-sm-3 col-lg-4">
               <select id="materiaux" class="form-select" aria-label="Default select example">
                 <option selected>Choisissez votre materiaux de construction</option>
                 <option value="1">Bois</option>
@@ -101,24 +101,38 @@
               </select>
             </div>
           </div>
-          <!-- <button class="offset-3 col-6 my-3" type="submit">Calculer votre devis</button> -->
           <input class="col-6 my-3" type="button" id="bouton" value="Calculer votre devis"
-            onclick="afficher()">
+            onclick="afficher(), calculDevis()">
         </form>
 
-        <section class="row mt-4 my-lg-5 text-center justify-content-center">
-          <h3 class="bg-light col-7 text-center ">Calcule de l'estimation de votre Projet :</h3>
-          <div class="border rounded-3 border-danger col-10 mb-2 mb-lg-1 justify-content-center">
-          <div id="recap" class="row mt-4 my-lg-5 text-center justify-content-lg-center">
-            <p class="col-8 offset-2 my-1 col-lg-5 offset-lg-3 text-center">Vous avez choisi :</p>
-            <p class="col-8 offset-2 my-1 col-lg-5 offset-lg-3 text-center" id="surfaceChoice">Entré une surface</p>
-            <p class="col-8 offset-2 my-1 col-lg-5 offset-lg-3 text-center" id="roomNbChoice">Entré un nb de chambres</p>
-            <p class="col-8 offset-2 my-1 col-lg-5 offset-lg-3 text-center" id="materiauxChoice">Entré un materiaux</p>
+        <section id="recap" class="row mt-4 my-lg-5 text-center justify-content-center">
+          <h3 class="col-7 text-center ">Calcul de l'estimation de votre Projet :</h3>
+          <div class="row border border-1 rounded-3 border-danger col-10 mb-2 col-lg-8 mt-lg-5 justify-content-center">
+            <div class="row mt-4 my-lg-3 justify-content-center">
+
+              <div class="row justify-content-center">
+                <p class="col-8 col-lg-5 text-center rounded-3">Vous avez choisi :</p>
+              </div>
+
+              <div class="row justify-content-center">
+                <p class="col-8 my-1 col-lg-5 text-center rounded-3" id="surfaceChoice">Entré une surface</p>
+              </div>
+
+              <div class="row justify-content-center">
+                <p class="col-8 my-1 col-lg-5 text-center rounded-3" id="roomNbChoice">Entré un nombre de chambres</p>
+              </div>
+
+              <div class="row justify-content-center">
+                <p class="col-8 my-1 col-lg-5 text-center rounded-3" id="materiauxChoice">Entré un materiaux</p>
+              </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+              <p class="col-8 my-3 col-lg-3 text-center" id="montantDevis">Ici se trouvera le prix de
+                l'estimation</p>
+            </div>
           </div>
-          <div class="row mt-4 my-lg-5 text-center justify-content-lg-center">
-            <p class="col-4 offset-4 my-3 col-lg-3 text-center" id="montantDevis">Ici se trouvera le prix de l'estimation</p>
-          </div>
-        </div>
         </section>
       </div>
     </section>

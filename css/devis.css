@@ -95,14 +95,23 @@ textarea {
       background-size: cover;
       background-repeat: no-repeat;
   }
-  #recap p {
+  #recap p, #recap h3 {
     background-color: #457b9d4f;
-    
+    font-weight: bolder;
   }
   
   .bg-457b9d {
-    background-color: #457b9d;
+    background-color: #457b9d4f;
+  }
 
+  label {
+      font-weight: bolder;
+  }
+
+  @media screen and (min-width: 992px) {
+      .backgroundImg {
+        padding-bottom: 30vh;
+      }
   }
   /* ==========================================================================
      Helper classes
