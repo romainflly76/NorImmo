@@ -96,6 +96,13 @@ textarea {
     background-color: #457b9d;
 
   }
+
+  .prix {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+  }
+
   .far {
     font-size: 60%;
   }
