@@ -105,11 +105,31 @@ textarea {
 .title {
     padding: 3em;
    }
+
+/*background-image: url("img/house-architectural-plan.png");*/
+/*.backgroundImg {
+      background-image: url(../img/house-architectural-plan.png);
+      min-height: 80vh;
+      opacity: 0.1;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }*/
+#faq p{
+  cursor: pointer;
+}
+.backgroundImg {
+  background-image: url("../img/house-architectural-plan.png");
+   opacity: 0.1;
+   min-height: 80vh;
+    background-size: cover;
+    position:relative;top:0;left:0;opacity:.75;z-index:-1;
+}
 h2 {
   font-family: 'Roboto', sans-serif;
 }
 p {
       font-family: 'Roboto', sans-serif;
+      
     }
 
 
@@ -121,8 +141,9 @@ p {
 }
 
 .far {
-
 font-size: 60%;
+}
+.backgroundimg {
 
 }
 
