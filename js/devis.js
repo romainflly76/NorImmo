@@ -1,16 +1,24 @@
+// declaration des variables pour la fonction afficher()
 var surfaceInput;
 var roomNbInput;
 var materiauxInput;
+// declaration des variables pour la fonction calculDevis() 
 var totalDevis;
 
 function afficher() {
+    // recuperation de la valeur entré par l'utilisateur pour la surface.
     surfaceInput = document.getElementById("surface").value;
+    // affichage de la valeur entré par l'utilisateur dans la section recapitulatif.
     document.getElementById("surfaceChoice").innerText = "- Une surface de : " + surfaceInput + "m2";
-    
+
+    // recuperation de la valeur entré par l'utilisateur pour le nombre de chambre.
     roomNbInput = document.getElementById("roomsnumber").value;
+    // affichage de la valeur entré par l'utilisateur dans la section recapitulative.
     document.getElementById("roomNbChoice").innerText = "- Un nombre de chambres de : " + roomNbInput;
 
+    // recuperation de la valeur du dropdown pour le type de materiaux.
     materiauxInput = document.getElementById("materiaux").value;
+    // affichage du type de materiaux dans la section recapitulative selon la "value" obtenue. 
     if (materiauxInput == 1) {
         document.getElementById("materiauxChoice").innerText = "- Un materiaux en : Bois";
     } else if (materiauxInput == 2) {
@@ -22,7 +30,9 @@ function afficher() {
  
 
 function calculDevis() {
+    // calcul du sousTotal ne tenant pas compte du type de materiaux.
     let sousTotal = ((1000* surfaceInput)+(10000*roomNbInput));
+    // calcul du total suivant le materiaux choisi
     if (materiauxInput == 1) {
         totalDevis = sousTotal + (sousTotal * 0.15);
     }
@@ -32,5 +42,6 @@ function calculDevis() {
     else if (materiauxInput == 3) {
         totalDevis = sousTotal + (sousTotal * 0.30);
     }
+    // affichage du total dans la section du montant devis.
     document.getElementById("montantDevis").innerText = "montant calculé :\n" + totalDevis + "€";
 }
