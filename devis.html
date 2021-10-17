@@ -11,16 +11,16 @@
   <link rel="apple-touch-icon" href="icon.png">-->
   <link rel="shortcut icon" type="image/jpg" href="img/633839.jpg">
   <!-- Place favicon.ico in the root directory -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- ajout du CDN pour les icons bootstrap  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- ajout du CDN pour les fonts  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/devis.css">
 </head>
 
 <body>
+  <!-- ############################################### HEADER ######################################## -->
   <header class="bg-#457b9d text-white py-5">
     <section class="container">
       <h1 class="display-1" id="mainTitle">N<i class="far fa-compass"></i>r <span class="text-danger">Immo</span></h1>
@@ -28,6 +28,7 @@
     </section>
   </header>
 
+<!-- ################################################### NAVBAR ############################################ -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -72,23 +73,27 @@
     </div>
   </nav>
 
+<!-- ####################################################### MAIN DEVIS ############################################################### -->
   <main class="container-fluid my-2 my-sm-2 my-lg-5">
     <section class="container-fluid">
       <div class=" col-12 col-lg-10 offset-lg-1 backgroundImg border border-2 rounded-3 border-danger">
 
         <form action="devis.html" class="row text-center justify-content-center mx-lg-5 my-lg-3">
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CHAMPS DE LA SUPERFICIE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
           <div class="row mt-2 my-lg-5 justify-content-center">
             <label class="col-8 my-1 col-sm-8 me-sm-3 col-lg-4" for="surface">Choisir votre superficie :</label>
             <input class="col-8 my-1 col-sm-8 my-sm-3 col-lg-4 " type="number" name="surface" id="surface" required>
           </div>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CHAMPS DU NOMBRE DE CHAMBRE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
           <div class="row my-lg-5 justify-content-center">
             <label class="col-8 my-1 col-sm-8 me-sm-3 col-lg-4" for="roomsnumber">Choisir un nombre de chambre :</label>
             <input class="col-8 my-1 col-sm-8 my-sm-3 col-lg-4" type="number" name="roomsnumber" id="roomsnumber"
               required>
           </div>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CHAMPS DU DROPDOWN DES MATERIAUX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
           <div class="row my-lg-5 justify-content-center">
             <label class="col-8 mb-1 col-sm-8 me-sm-3 col-lg-4" for="material">Choisir votre materiaux de construction
               :</label>
@@ -105,11 +110,14 @@
             onclick="afficher(), calculDevis()">
         </form>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SECTION D AFFICHAGE DU DEVIS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
         <section id="recap" class="row mt-4 my-lg-5 text-center justify-content-center">
           <h3 class="col-7 text-center ">Calcul de l'estimation de votre Projet :</h3>
           <div class="row border border-1 rounded-3 border-danger col-10 mb-2 col-lg-8 mt-lg-5 justify-content-center">
-            <div class="row mt-4 my-lg-3 justify-content-center">
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ AFFICHAGE RECAPITULATIF DES CHOIX UTILISATEUR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->            
+            <div class="row mt-4 my-lg-3 justify-content-center">
               <div class="row justify-content-center">
                 <p class="col-8 col-lg-5 text-center rounded-3">Vous avez choisi :</p>
               </div>
@@ -125,9 +133,9 @@
               <div class="row justify-content-center">
                 <p class="col-8 my-1 col-lg-5 text-center rounded-3" id="materiauxChoice">Entré un materiaux</p>
               </div>
-
             </div>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ AFFICHAGE DU RESULTAT DU DEVIS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div class="row justify-content-center">
               <p class="col-8 my-3 col-lg-3 text-center" id="montantDevis">Ici se trouvera le prix de
                 l'estimation</p>
@@ -138,6 +146,7 @@
     </section>
   </main>
 
+<!-- ################################################### FOOTER ############################################ -->
   <footer class="bg-#457b9d text-white py-lg-5 py-sm-2">
     <section class="container">
       <h1 class="display-1" id="mainTitle">N<i class="far fa-compass"></i>r <span class="text-danger">Immo</span></h1>

@@ -87,27 +87,24 @@ textarea {
      Author's custom styles
      ========================================================================== */
   
-
+/* ajout d'une image d'arriere plan */
   .backgroundImg {
       background-image: url(../img/house-architectural-plan.png);
       min-height: 80vh;
-      opacity: 0.8;
+      opacity: 0.4;
       background-size: cover;
       background-repeat: no-repeat;
   }
+  /* mise en place d'un fond de texte au niveau du recapitulatif du devis */
   #recap p, #recap h3 {
     background-color: #457b9d4f;
     font-weight: bolder;
   }
-  
-  .bg-457b9d {
-    background-color: #457b9d4f;
-  }
-
+  /* mise en gras des textes des labels */
   label {
       font-weight: bolder;
   }
-
+/* changement de la proportion du background */
   @media screen and (min-width: 992px) {
       .backgroundImg {
         padding-bottom: 30vh;

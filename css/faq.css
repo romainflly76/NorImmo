@@ -93,24 +93,30 @@ textarea {
 .jcenter {
   justify-content: center;
 }
+
 .flexdircol {
   flex-direction: column;
 }
+
 .flexdircolrev {
   flex-direction: column-reverse;
 }
+
 .dispnone {
   display: none;
 }
+
 .title {
-    padding: 3em;
-   }
+  padding: 3em;
+}
+
 h2 {
   font-family: 'Roboto', sans-serif;
 }
+
 p {
-      font-family: 'Roboto', sans-serif;
-    }
+  font-family: 'Roboto', sans-serif;
+}
 
 
 .dropdown-content {
@@ -121,11 +127,13 @@ p {
 }
 
 .far {
-
-font-size: 60%;
+  font-size: 60%;
 
 }
 
+#faq p {
+  cursor: pointer;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -219,9 +227,9 @@ font-size: 60%;
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -232,6 +240,7 @@ font-size: 60%;
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -248,11 +257,11 @@ font-size: 60%;
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
