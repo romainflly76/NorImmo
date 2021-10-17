@@ -1,4 +1,4 @@
-const items = document.querySelectorAll('img');  /* selectionne toutes photo et les met dans un tableau*/
+const items = document.querySelectorAll("div.slider img");;  /* selectionne toutes photo et les met dans un tableau*/
 const nbSlide = items.length;
 const suivant = document.querySelector('.right');
 const precedent = document.querySelector('.left');
