@@ -16,6 +16,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/devis.css">
 </head>
 
@@ -27,10 +28,11 @@
     </section>
   </header>
 
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><!--<i>Norimmo</i>--></a>
+      <a class="navbar-brand" href="index.html">
+        <!--<i>Norimmo</i>-->
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -70,29 +72,28 @@
     </div>
   </nav>
 
-
   <main class="container-fluid my-2 my-sm-2 my-lg-5">
-    <section class="container">
-      <div class=" col-12 backgroundImg border border-danger">
+    <section class="container-fluid">
+      <div class=" col-12 col-lg-10 offset-lg-1 backgroundImg border border-2 rounded-3 border-danger">
 
-        <form action="devis.html"  class="row text-center mx-lg-5 my-lg-3">
-          
-          <div class="row mt-2 mb-lg-5 justify-content-lg-center">
-            <label class="col-12 my-2 col-sm-12 mx-sm-2 col-lg-4 " for="surface">Choisir votre superficie :</label>
-            <input class="col-8 offset-2 my-2 col-sm-8 offset-sm-2 my-sm-2 col-lg-4 " type="number" name="surface"
-              id="surface" required>
+        <form action="devis.html" class="row text-center justify-content-center mx-lg-5 my-lg-3">
+
+          <div class="row mt-2 my-lg-5 justify-content-center">
+            <label class="col-8 my-1 col-sm-8 me-sm-3 col-lg-4" for="surface">Choisir votre superficie :</label>
+            <input class="col-8 my-1 col-sm-8 my-sm-3 col-lg-4 " type="number" name="surface" id="surface" required>
           </div>
 
-          <div class="row mb-lg-5 justify-content-lg-center">
-            <label class="col-12 my-2 col-sm-12 my-sm-3 col-lg-4" for="roomsnumber">Choisir un nombre de chambre :</label>
-            <input class="col-8 offset-2 my-2 col-sm-8 my-sm-3 col-lg-4" type="number" name="roomsnumber"
-              id="roomsnumber" required>
+          <div class="row my-lg-5 justify-content-center">
+            <label class="col-8 my-1 col-sm-8 me-sm-3 col-lg-4" for="roomsnumber">Choisir un nombre de chambre :</label>
+            <input class="col-8 my-1 col-sm-8 my-sm-3 col-lg-4" type="number" name="roomsnumber" id="roomsnumber"
+              required>
           </div>
 
-          <div class="row mb-lg-5 justify-content-lg-center">
-            <label class="col-8 offset-2 mb-3 col-sm-12 mx-sm-2 col-lg-4" for="material">Choisir votre materiaux de construction :</label>
-            <div class="col-8 offset-2 mb-5 col-sm-8 my-sm-3 col-lg-4">
-              <select class="form-select" aria-label="Default select example">
+          <div class="row my-lg-5 justify-content-center">
+            <label class="col-8 mb-1 col-sm-8 me-sm-3 col-lg-4" for="material">Choisir votre materiaux de construction
+              :</label>
+            <div class="col-8 mb-3 col-sm-8 my-sm-3 col-lg-4">
+              <select id="materiaux" class="form-select" aria-label="Default select example">
                 <option selected>Choisissez votre materiaux de construction</option>
                 <option value="1">Bois</option>
                 <option value="2">Parpaings</option>
@@ -100,16 +101,39 @@
               </select>
             </div>
           </div>
-          <button class="offset-3 col-6 my-3" type="submit">Calculer votre devis</button>
+          <input class="col-6 my-3" type="button" id="bouton" value="Calculer votre devis"
+            onclick="afficher(), calculDevis()">
         </form>
 
-        <aside class="mt-4 text-center">
-          <h3 class="bg-light">Calcule de l'estimation de votre Projet :</h3>
-          <div>
-            <p class="bg-light offset-3 col-6 my-3">ici ce trouve le prix de l'estimation</p>
-          </div>
-        </aside>
+        <section id="recap" class="row mt-4 my-lg-5 text-center justify-content-center">
+          <h3 class="col-7 text-center ">Calcul de l'estimation de votre Projet :</h3>
+          <div class="row border border-1 rounded-3 border-danger col-10 mb-2 col-lg-8 mt-lg-5 justify-content-center">
+            <div class="row mt-4 my-lg-3 justify-content-center">
 
+              <div class="row justify-content-center">
+                <p class="col-8 col-lg-5 text-center rounded-3">Vous avez choisi :</p>
+              </div>
+
+              <div class="row justify-content-center">
+                <p class="col-8 my-1 col-lg-5 text-center rounded-3" id="surfaceChoice">Entré une surface</p>
+              </div>
+
+              <div class="row justify-content-center">
+                <p class="col-8 my-1 col-lg-5 text-center rounded-3" id="roomNbChoice">Entré un nombre de chambres</p>
+              </div>
+
+              <div class="row justify-content-center">
+                <p class="col-8 my-1 col-lg-5 text-center rounded-3" id="materiauxChoice">Entré un materiaux</p>
+              </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+              <p class="col-8 my-3 col-lg-3 text-center" id="montantDevis">Ici se trouvera le prix de
+                l'estimation</p>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
   </main>
