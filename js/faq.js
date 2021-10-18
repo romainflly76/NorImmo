@@ -1,8 +1,6 @@
 // Je récupère ma question 1 pour lui appliquer une fonction
 let quest1 = document.getElementById("quest1");
 
-
-
 quest1.addEventListener('click', function() {
     rep1.classList.toggle("dispnone");
     chev1down.classList.toggle("dispnone");
@@ -12,8 +10,6 @@ quest1.addEventListener('click', function() {
 
 // Je récupère ma question 1 pour lui appliquer une fonction
 let quest2 = document.getElementById("quest2");
-
-
 
 quest2.addEventListener('click', function() {
     rep2.classList.toggle("dispnone");
@@ -25,8 +21,6 @@ quest2.addEventListener('click', function() {
 // Je récupère ma question 1 pour lui appliquer une fonction
 let quest3 = document.getElementById("quest3");
 
-
-
 quest3.addEventListener('click', function() {
     rep3.classList.toggle("dispnone");
     chev3down.classList.toggle("dispnone");
@@ -37,8 +31,6 @@ quest3.addEventListener('click', function() {
 // Je récupère ma question 1 pour lui appliquer une fonction
 let quest4 = document.getElementById("quest4");
 
-
-
 quest4.addEventListener('click', function() {
     rep4.classList.toggle("dispnone");
     chev4down.classList.toggle("dispnone");
@@ -48,8 +40,6 @@ quest4.addEventListener('click', function() {
 
 // Je récupère ma question 1 pour lui appliquer une fonction
 let quest5 = document.getElementById("quest5");
-
-
 
 quest5.addEventListener('click', function() {
     rep5.classList.toggle("dispnone");
