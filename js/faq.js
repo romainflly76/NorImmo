@@ -1,4 +1,4 @@
-let rep1 = document.getElementById("rep1");
+// Je récupère ma question 1 pour lui appliquer une fonction
 let quest1 = document.getElementById("quest1");
 
 
@@ -10,7 +10,7 @@ quest1.addEventListener('click', function() {
 
 });
 
-let rep2 = document.getElementById("rep2");
+// Je récupère ma question 1 pour lui appliquer une fonction
 let quest2 = document.getElementById("quest2");
 
 
@@ -22,7 +22,7 @@ quest2.addEventListener('click', function() {
 
 });
 
-let rep3 = document.getElementById("rep3");
+// Je récupère ma question 1 pour lui appliquer une fonction
 let quest3 = document.getElementById("quest3");
 
 
@@ -34,7 +34,7 @@ quest3.addEventListener('click', function() {
 
 });
 
-let rep4 = document.getElementById("rep4");
+// Je récupère ma question 1 pour lui appliquer une fonction
 let quest4 = document.getElementById("quest4");
 
 
@@ -46,7 +46,7 @@ quest4.addEventListener('click', function() {
 
 });
 
-let rep5 = document.getElementById("rep5");
+// Je récupère ma question 1 pour lui appliquer une fonction
 let quest5 = document.getElementById("quest5");
 
 
