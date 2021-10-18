@@ -44,4 +44,6 @@ function calculDevis() {
     }
     // affichage du total dans la section du montant devis.
     document.getElementById("montantDevis").innerText = "montant calculé :\n" + totalDevis + "€";
+    document.getElementById("contactfinal").innerText = "Pour un devis plus precis merci de nous contacté via le formulaire de contact";
+    
 }

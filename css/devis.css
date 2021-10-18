@@ -95,15 +95,18 @@ textarea {
       background-size: round contain;
       background-repeat: no-repeat;
   }
+
   /* mise en place d'un fond de texte au niveau du recapitulatif du devis */
   #recap p, #recap h3 {
     background-color: #457b9d4f;
     font-weight: bolder;
   }
+
   /* mise en gras des textes des labels */
   label {
       font-weight: bolder;
   }
+  
 /* changement de la proportion du background */
   @media screen and (min-width: 992px) {
       .backgroundImg {
