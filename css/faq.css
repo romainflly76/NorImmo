@@ -93,22 +93,87 @@ textarea {
 .jcenter {
   justify-content: center;
 }
-
-.flexdircol {
-  flex-direction: column;
-}
-
-.flexdircolrev {
-  flex-direction: column-reverse;
-}
-
 .dispnone {
   display: none;
 }
+#faq p{
+  cursor: pointer;
+}
+.dropdown-content {
+  border: solid;
+  border-color: #457b9d;
+  margin: 0.8em;
+  padding: 1em;
+}
+.font {
+  background-image: url(../img/a.png);
+   background-size: ;
+   background-repeat: round no-repeat;
+   width: 100%;
+   height: 100%;
+   flex-direction: column;
+  }
 
 .title {
+  flex-direction: colum-reverse;
+  background-color: ;
+  font-size: 0.9em;
+  padding: 1em;
+  width: 100%;
+}
+p {
+  background-color:;
+  justify-content: center;
+  font-size: 0.7em;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    flex-direction: colum-reverse;
+    background-color: ;
+    font-size: 1.5em;
+    padding: 1em;
+    width: 100%;
+  }
+
+    p {
+      background-color:;
+      justify-content: center;
+      font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    flex-direction: colum-reverse;
+    background-color: ;
+    font-size: 2em;
+    padding: 1em;
+    width: 100%;
+  }
+
+    p {
+      background-color:;
+      justify-content: center;
+      font-size: 1.5em;
+    }
+
+    .font {
+      background-image: url(../img/a.png);
+      background-origin: content-box;
+
+       background-repeat: no-repeat;
+       width: 100%;
+       height: 100%;
+       flex-direction: column;
+      }
+
+}
+
+/*
+.title {
     padding: 3em;
-   }
+   }*/
 
 /*background-image: url("img/house-architectural-plan.png");*/
 /*.backgroundImg {
@@ -118,16 +183,10 @@ textarea {
       background-size: cover;
       background-repeat: no-repeat;
   }*/
-#faq p{
-  cursor: pointer;
-}
-.backgroundImg {
-  background-image: url("../img/house-architectural-plan.png");
-   opacity: 0.1;
-   min-height: 80vh;
-    background-size: cover;
-    position:relative;top:0;left:0;opacity:.75;z-index:-1;
-}
+
+
+
+/*}
 h2 {
   font-family: 'Roboto', sans-serif;
 }
@@ -135,26 +194,23 @@ h2 {
 p {
       font-family: 'Roboto', sans-serif;
 
-    }
+    }*/
 
 
-.dropdown-content {
-  border: solid;
-  border-color: #457b9d;
-  margin: 0.8em;
-  padding: 1em;
-}
 
-.far {
+
+/*.far {
 font-size: 60%;
 }
-.backgroundimg {
 
-}
 
-#faq p {
-  cursor: pointer;
-}
+
+
+*/
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
