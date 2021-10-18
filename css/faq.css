@@ -87,89 +87,108 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .dflex {
-  display: flex;  /*je créé une class dsplay-flex*/
+  display: flex;
+  /*je créé une class dsplay-flex*/
 }
 
 .jcenter {
-  justify-content: center;  /*je créé une class justify-content*/
+  justify-content: center;
+  /*je créé une class justify-content*/
 }
+
 .dispnone {
-  display: none;  /*je créé une class display-none*/
+  display: none;
+  /*je créé une class display-none*/
 }
-#faq p{
-  cursor: pointer; /*je dis à mon curseur de pointer différement sur le <p> de la question*/
+
+#faq p {
+  cursor: pointer;
+  /*je dis à mon curseur de pointer différement sur le <p> de la question*/
 }
 
 #faq {
-  min-height: 70vh; /*je contiens ma background-image en hauteur dans son conteneur*/
+  min-height: 70vh;
+  /*je contiens ma background-image en hauteur dans son conteneur*/
 }
-    /*je mets en page la réponses*/
+
+/*je mets en page la réponses*/
 .dropdown-content {
   border: solid;
   border-color: #457b9d;
   margin: 0.8em;
   padding: 1em;
 }
-    /*je mets en forme ma backround-image*/
+
+/*je mets en forme ma backround-image*/
 .font {
   background-image: url(../img/a.png);
-   background-size: ;
-   background-repeat: round no-repeat;
-   width: 100%;
-   height: 100%;
-   flex-direction: column;
-  }
-  /*je mets en forme le titre de ma page*/
+  background-repeat: round no-repeat;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+/*je mets en forme le titre de ma page*/
 .title {
   font-size: 0.9em;
   padding: 1em;
   width: 100%;
 }
-  /*je mets en forme la réponse à ma question*/
+
+/*je mets en forme la réponse à ma question*/
 p {
   justify-content: center;
   font-size: 0.7em;
 }
-    /*je rend responsive mon site pour les tablette*/
+
+/*je rend responsive mon site pour les tablette*/
 @media screen and (min-width: 768px) {
-    /*je met en forme mon titre*/
+
+  /*je met en forme mon titre*/
   .title {
     font-size: 1.5em;
   }
-    /*je mets en forme la réponse à ma question*/
-    p {
-      justify-content: center;
-      font-size: 1.1em;
-    }
+
+  /*je mets en forme la réponse à ma question*/
+  p {
+    justify-content: center;
+    font-size: 1.1em;
+  }
 }
-      /*je rend responsive mon site pour les desktop*/
+
+/*je rend responsive mon site pour les desktop*/
 @media screen and (min-width: 1024px) {
-    /*je mets en forme mon titre*/
+
+  /*je mets en forme mon titre*/
   .title {
     flex-direction: colum-reverse;
     font-size: 2em;
     width: 100%;
   }
+
   /*je mets en forme la réponse à ma question*/
-    p {
-      font-size: 1.5em;
-    }
-    /*je mets en forme ma backround-image*/
-    .font {
-      background-image: url(../img/a.png);
-      background-origin: content-box;
-       background-repeat: no-repeat;
-       width: 100%;
-       height: 100%;
-       flex-direction: column;
-      }
+  p {
+    font-size: 1.5em;
+  }
+
+  /*je mets en forme ma backround-image*/
+  .font {
+    background-image: url(../img/a.png);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
 }
-    /*je rend responsive mon site pour les desktop thd*/
+
+/*je rend responsive mon site pour les desktop thd*/
 @media screen and (min-width: 1440px) {
-    /*je mets en forme ma backround-image*/
-    .font {
-       background-repeat: round no-repeat;
-      }
+
+  /*je mets en forme ma backround-image*/
+  .font {
+    background-repeat: round no-repeat;
+  }
 }
 
 /* ==========================================================================
