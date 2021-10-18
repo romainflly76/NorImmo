@@ -117,6 +117,10 @@ textarea {
     }
 
     .container {
+<<<<<<< HEAD
+      /*max-width: 800px;*/
+=======
+>>>>>>> 3aa9f03e537f131deea80467c1c9deaeac1507ec
       margin: 0 auto;
     }
 
