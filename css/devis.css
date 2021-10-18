@@ -92,7 +92,7 @@ textarea {
       background-image: url(../img/house-architectural-plan3.png);
       /* min-height: 80vh; */
       /* opacity: 0.4; */
-      background-size: cover;
+      background-size: round contain;
       background-repeat: no-repeat;
   }
   /* mise en place d'un fond de texte au niveau du recapitulatif du devis */
