@@ -89,9 +89,9 @@ textarea {
   
 /* ajout d'une image d'arriere plan */
   .backgroundImg {
-      background-image: url(../img/house-architectural-plan.png);
-      min-height: 80vh;
-      opacity: 0.4;
+      background-image: url(../img/house-architectural-plan3.png);
+      /* min-height: 80vh; */
+      /* opacity: 0.4; */
       background-size: cover;
       background-repeat: no-repeat;
   }
@@ -107,7 +107,7 @@ textarea {
 /* changement de la proportion du background */
   @media screen and (min-width: 992px) {
       .backgroundImg {
-        padding-bottom: 30vh;
+        padding-bottom: 5vh;
       }
   }
   /* ==========================================================================
