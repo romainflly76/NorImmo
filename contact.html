@@ -94,10 +94,14 @@
                   <input type="text" class="form-control" name="telephone">
                   <small></small>
                 </div>
-                <div class="form-group mb-3">
-                  <label for="motif" class="form-label">Motif du contact</label>
-                  <input type="text" class="form-control" name="motif"> 
-                  <small></small>
+                <div class="listes">
+                  <p>Motif du contact</p>
+                  <select name="motif" id="motif">
+                    <option value="devis">devis</option>
+                    <option value="information">information</option>
+                    <option value="reclamation">reclamation</option>
+                  </select>
+                  <input type="submit" name="Submit" value="Valider" onclick="testListe()"/>
                 </div>
                 <div class="form-group mb-3">
                   <label for="message" class="form-label">Message</label>
