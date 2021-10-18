@@ -33,3 +33,4 @@ function slidePrecedente(){  /* on fait l'inverse, on retire la classe active*/
 }
 precedent.addEventListener('click', slidePrecedente) /* On est à l'ecoute du clique et lorsque l'on clique sur image precedente, cela renvoi la fonction (precedente) */
 
+setInterval("slideSuivante(1)", 4000);

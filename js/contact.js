@@ -110,8 +110,27 @@ else {
     }    
 
 
+// ***************** Validation motif du contact*******************//
 
-    
+function testListe() {
+
+    nb=form.motif.length; // le nombre de motifs possible//
+    i=0;
+    //parcours de tous les éléments//
+    for (i=0;i<nb;i++){
+        if(form.motif.options[i].selected) {
+            sMotifName=form.motif.options[i].value;
+            (sMotifName+"est selectionné");
+        }
+    }
+}
+
+// ***************** Validation message *******************//
+
+
+
+
+
 
 
 
